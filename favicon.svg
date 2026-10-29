@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="oceanBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="60%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+    <radialGradient id="escaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#38bdf8" />
+      <stop offset="80%" stop-color="#0284c7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="anglerSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Ocean Dark Disc -->
+  <circle cx="32" cy="32" r="30" fill="url(#oceanBg)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Depth Wave Isobars -->
+  <path d="M 6 42 Q 32 36 58 42" fill="none" stroke="#0ea5e9" stroke-width="0.75" opacity="0.3" stroke-dasharray="2 3" />
+  <path d="M 6 48 Q 32 42 58 48" fill="none" stroke="#0284c7" stroke-width="0.75" opacity="0.2" stroke-dasharray="2 3" />
+
+  <!-- Glowing Esca Lure Radial Light Cone -->
+  <circle cx="44" cy="15" r="10" fill="url(#escaGlow)" />
+
+  <!-- Anglerfish Illucium Antenna Filament -->
+  <path d="M 28 26 C 26 16 38 12 43 15" fill="none" stroke="#67e8f9" stroke-width="1.8" stroke-linecap="round" />
+
+  <!-- Luminous Esca Bulb -->
+  <circle cx="44" cy="15" r="2.8" fill="#ffffff" stroke="#38bdf8" stroke-width="1" />
+
+  <!-- Anglerfish Body Silhouette -->
+  <path d="M 16 35 C 16 26 26 24 38 27 C 44 29 48 34 46 38 C 44 42 36 44 26 42 C 20 41 16 38 16 35 Z" fill="url(#anglerSkin)" stroke="#475569" stroke-width="1" />
+
+  <!-- Sharp Teeth -->
+  <path d="M 38 31 L 39 34 L 41 31 L 42 34 L 44 32 L 45 35" fill="none" stroke="#f8fafc" stroke-width="1.2" stroke-linecap="round" />
+  <path d="M 37 38 L 39 35 L 40 38 L 42 35 L 43 38" fill="none" stroke="#f8fafc" stroke-width="1.2" stroke-linecap="round" />
+
+  <!-- Glowing Pale Eye -->
+  <circle cx="33" cy="28" r="2.2" fill="#0284c7" stroke="#38bdf8" stroke-width="0.8" />
+  <circle cx="33" cy="28" r="0.9" fill="#f8fafc" />
+
+  <!-- Pectoral & Caudal Fins -->
+  <path d="M 24 37 C 22 41 20 44 25 43 Z" fill="#475569" opacity="0.8" />
+  <path d="M 16 35 L 10 30 L 12 35 L 10 40 Z" fill="#334155" />
+
+  <!-- Floating Bioluminescent Deep Particles -->
+  <circle cx="12" cy="18" r="0.9" fill="#38bdf8" opacity="0.6" />
+  <circle cx="52" cy="46" r="1.2" fill="#34d399" opacity="0.7" />
+  <circle cx="18" cy="50" r="0.7" fill="#67e8f9" opacity="0.5" />
+</svg>

@@ -1,0 +1,19 @@
+{
+  "name": "Deep Ocean Trench Odyssey",
+  "short_name": "DeepOcean",
+  "description": "11,000m vertical bathymetric descent elevator, live hydrostatic pressure gauges, bioluminescent deep-sea creatures, and ocean trench explorer.",
+  "start_url": "https://mahesh-yennam.github.io/Deep-Ocean-Odyssey/",
+  "scope": "https://mahesh-yennam.github.io/Deep-Ocean-Odyssey/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#0284c7",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "64x64 128x128 256x256 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFQ8M0VSFN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RFQ8M0VSFN');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Ocean Trench Odyssey — Gamility Explorer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Embark on an 11,000m vertical dive down the Mariana Trench into the Challenger Deep. Real-time hydrostatic pressure gauges, bioluminescent deep-sea creatures, inverted Mount Everest scale comparator, and ocean trench quiz.">
+  <meta name="keywords" content="deep ocean, mariana trench, challenger deep, bathymetry, bioluminescence, anglerfish, hydrostatic pressure, ocean zones, marine biology, gamility explorer">
+  <meta name="author" content="Gamility">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mahesh-yennam.github.io/Deep-Ocean-Odyssey/">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mahesh-yennam.github.io/Deep-Ocean-Odyssey/">
+  <meta property="og:title" content="Deep Ocean Trench Odyssey — Gamility Explorer">
+  <meta property="og:description" content="Embark on an 11,000m vertical dive down the Mariana Trench into the Challenger Deep. Real-time hydrostatic pressure gauges, bioluminescent deep-sea creatures, inverted Mount Everest scale comparator, and ocean trench quiz.">
+  <meta property="og:image" content="https://mahesh-yennam.github.io/Deep-Ocean-Odyssey/preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Deep Ocean Trench Odyssey — Gamility Explorer">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mahesh-yennam.github.io/Deep-Ocean-Odyssey/">
+  <meta name="twitter:title" content="Deep Ocean Trench Odyssey — Gamility Explorer">
+  <meta name="twitter:description" content="Embark on an 11,000m vertical dive down the Mariana Trench into the Challenger Deep. Real-time hydrostatic pressure gauges, bioluminescent deep-sea creatures, inverted Mount Everest scale comparator, and ocean trench quiz.">
+  <meta name="twitter:image" content="https://mahesh-yennam.github.io/Deep-Ocean-Odyssey/preview.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#020617">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Deep Ocean Trench Odyssey",
+    "url": "https://mahesh-yennam.github.io/Deep-Ocean-Odyssey/",
+    "description": "Interactive 11,000m vertical bathymetric descent elevator, hydrostatic pressure gauges, bioluminescent fauna, and ocean trench explorer.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript support",
+    "creator": {
+      "@type": "Organization",
+      "name": "Gamility"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       TOP RETURN NAVIGATION RIBBON
+       ========================================================================= -->
+  <header class="app-top-nav">
+    <div class="nav-container">
+      <a href="https://mahesh-yennam.github.io/Gamility/" class="nav-brand" aria-label="Gamility Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+          </svg>
+        </div>
+        <span class="brand-text">Gami<span>lity</span> <small class="brand-sub">Explorer</small></span>
+      </a>
+
+      <div class="nav-actions">
+        <!-- Audio Synth Toggle -->
+        <button type="button" class="audio-btn" id="audioToggleBtn" title="Toggle Hydrophone Ambience (Muted by default)">
+          <span class="audio-icon" id="audioIcon">🔇</span>
+          <span class="audio-lbl" id="audioLabel">Sonar Off</span>
+        </button>
+
+        <a href="https://mahesh-yennam.github.io/Gamility/explorer.html" class="nav-back-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Back to Explorer Hub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO BANNER
+       ========================================================================= -->
+  <section class="hero-banner">
+    <div class="container">
+      <div class="hero-pill">
+        <span class="pill-icon">🌊</span> Oceanography & Hadal Zone Bathymetry
+      </div>
+      <h1 class="hero-title">
+        Deep Ocean Trench <span class="gradient-text">Odyssey</span>
+      </h1>
+      <p class="hero-desc">
+        Descend 11,000 meters into the Mariana Trench. Experience the extreme transition from sunlit coral reefs to crushing hadal trenches, discover bizarre bioluminescent organisms, and explore hydrothermal vents.
+      </p>
+
+      <!-- Platform Counters -->
+      <div class="hero-stats-strip">
+        <div class="stat-bubble">
+          <span class="stat-num">10,928 m</span>
+          <span class="stat-lbl">Challenger Deep</span>
+        </div>
+        <div class="stat-bubble">
+          <span class="stat-num">1,093 ATM</span>
+          <span class="stat-lbl">Maximum Pressure</span>
+        </div>
+        <div class="stat-bubble">
+          <span class="stat-num">5 Layers</span>
+          <span class="stat-lbl">Oceanic Bio-Zones</span>
+        </div>
+        <div class="stat-bubble">
+          <span class="stat-num">24 Species</span>
+          <span class="stat-lbl">Deep-Sea Fauna</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MAIN DISCOVERY MODE SWITCHER
+       ========================================================================= -->
+  <nav class="hub-nav-bar" aria-label="Explorer Discovery Modules">
+    <div class="container hub-nav-inner">
+      <button type="button" class="hub-tab active" data-tab="dive" id="tabDive">
+        <span class="tab-icon">⚓</span>
+        <span class="tab-text">11,000m Dive Elevator</span>
+      </button>
+      <button type="button" class="hub-tab" data-tab="catalog" id="tabCatalog">
+        <span class="tab-icon">🦑</span>
+        <span class="tab-text">Deep-Sea Fauna</span>
+      </button>
+      <button type="button" class="hub-tab" data-tab="scale" id="tabScale">
+        <span class="tab-icon">⛰️</span>
+        <span class="tab-text">Everest Depth Scale</span>
+      </button>
+      <button type="button" class="hub-tab" data-tab="vents" id="tabVents">
+        <span class="tab-icon">🌋</span>
+        <span class="tab-text">Hydrothermal Vents</span>
+      </button>
+      <button type="button" class="hub-tab" data-tab="quiz" id="tabQuiz">
+        <span class="tab-icon">🧭</span>
+        <span class="tab-text">Ocean Trench Quiz</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- =====================================================================
+           VIEW 1: 11,000M VERTICAL BATHYMETRIC DIVE ELEVATOR
+           ===================================================================== -->
+      <section class="module-view active" id="viewDive" aria-label="Vertical Bathymetric Descent Elevator">
+        
+        <!-- Sticky Cockpit Telemetry HUD -->
+        <div class="cockpit-hud-wrapper" id="cockpitHud">
+          <div class="cockpit-telemetry-grid">
+            
+            <!-- Depth Meter -->
+            <div class="telemetry-gauge">
+              <span class="gauge-label">Bathymetric Depth</span>
+              <div class="gauge-main">
+                <span class="gauge-value" id="hudDepthMeters">0</span>
+                <span class="gauge-unit" id="hudDepthUnit">m</span>
+              </div>
+              <span class="gauge-sub" id="hudDepthFeet">0 ft</span>
+            </div>
+
+            <!-- Pressure Gauge -->
+            <div class="telemetry-gauge">
+              <span class="gauge-label">Hydrostatic Pressure</span>
+              <div class="gauge-main">
+                <span class="gauge-value text-amber" id="hudPressureAtm">1.0</span>
+                <span class="gauge-unit">ATM</span>
+              </div>
+              <span class="gauge-sub" id="hudPressurePsi">14.7 PSI</span>
+            </div>
+
+            <!-- Temperature -->
+            <div class="telemetry-gauge">
+              <span class="gauge-label">Water Temperature</span>
+              <div class="gauge-main">
+                <span class="gauge-value text-cyan" id="hudTemperature">28.0</span>
+                <span class="gauge-unit">°C</span>
+              </div>
+              <span class="gauge-sub" id="hudTempF">82.4 °F</span>
+            </div>
+
+            <!-- Sunlight Penetration -->
+            <div class="telemetry-gauge">
+              <span class="gauge-label">Sunlight Level</span>
+              <div class="gauge-main">
+                <span class="gauge-value" id="hudSunlightPct">100%</span>
+              </div>
+              <div class="light-bar-track">
+                <div class="light-bar-fill" id="hudSunlightBar" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <!-- Lighting Mode Toggle -->
+            <div class="telemetry-action-box">
+              <button type="button" class="biolum-btn" id="btnToggleBiolum">
+                <span class="biolum-icon" id="biolumIcon">💡</span>
+                <span class="biolum-text" id="biolumText">Sub Floodlights Active</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Quick Jump Zone Pills -->
+          <div class="zone-jump-pills-row">
+            <span class="jump-title">Quick Dive:</span>
+            <button type="button" class="zone-pill active" data-depth="0">☀️ Sunlight (0m)</button>
+            <button type="button" class="zone-pill" data-depth="200">🌓 Twilight (200m)</button>
+            <button type="button" class="zone-pill" data-depth="1000">🌑 Midnight (1,000m)</button>
+            <button type="button" class="zone-pill" data-depth="3800">🚢 Titanic (3,800m)</button>
+            <button type="button" class="zone-pill" data-depth="4000">🕳️ Abyssal (4,000m)</button>
+            <button type="button" class="zone-pill" data-depth="6000">⚡ Hadal (6,000m)</button>
+            <button type="button" class="zone-pill" data-depth="10928">🔱 Challenger Deep (10,928m)</button>
+          </div>
+        </div>
+
+        <!-- Vertical Dive Ocean Column -->
+        <div class="ocean-column-stage" id="oceanColumnStage">
+          <!-- Ambient Particle Overlay -->
+          <div class="marine-snow-container" id="marineSnowContainer" aria-hidden="true"></div>
+
+          <!-- Zone 1: Sunlight (Epipelagic 0-200m) -->
+          <div class="ocean-zone-block zone-sunlight" id="zoneSunlight" data-zone="sunlight">
+            <div class="zone-watermark-header">
+              <div class="zone-title-wrap">
+                <span class="zone-badge">0m — 200m</span>
+                <h3 class="zone-heading">Epipelagic Zone <small>(The Sunlight Zone)</small></h3>
+              </div>
+              <p class="zone-summary">Where photosynthesis thrives. Home to 90% of all marine life, warm ocean currents, and vibrant coral atolls.</p>
+            </div>
+
+            <!-- Species Cards in Zone 1 -->
+            <div class="zone-species-grid" id="gridSunlight"></div>
+          </div>
+
+          <!-- Zone 2: Twilight (Mesopelagic 200-1000m) -->
+          <div class="ocean-zone-block zone-twilight" id="zoneTwilight" data-zone="twilight">
+            <div class="zone-watermark-header">
+              <div class="zone-title-wrap">
+                <span class="zone-badge">200m — 1,000m</span>
+                <h3 class="zone-heading">Mesopelagic Zone <small>(The Twilight Zone)</small></h3>
+              </div>
+              <p class="zone-summary">Sunlight dims to a faint blue glimmer. Photosynthesis is impossible; creatures evolve tubular eyes and counterilluminating photophores.</p>
+            </div>
+
+            <!-- Species Cards in Zone 2 -->
+            <div class="zone-species-grid" id="gridTwilight"></div>
+          </div>
+
+          <!-- Zone 3: Midnight (Bathypelagic 1000-4000m) -->
+          <div class="ocean-zone-block zone-midnight" id="zoneMidnight" data-zone="midnight">
+            <div class="zone-watermark-header">
+              <div class="zone-title-wrap">
+                <span class="zone-badge">1,000m — 4,000m</span>
+                <h3 class="zone-heading">Bathypelagic Zone <small>(The Midnight Zone)</small></h3>
+              </div>
+              <p class="zone-summary">Total, absolute blackness. The only illumination is biological. Crushing pressure rises to 400 atmospheres, and water chills to 4°C.</p>
+            </div>
+
+            <!-- Titanic Landmark Card (3,800m) -->
+            <div class="landmark-callout-card" id="titanicCallout">
+              <div class="landmark-media-thumb">
+                <img 
+                  src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Titanic_wreck_bow.jpg/330px-Titanic_wreck_bow.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" 
+                  alt="RMS Titanic Wreck Bow on Ocean Floor" 
+                  class="landmark-thumb-img" 
+                  loading="lazy" 
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                >
+                <div class="landmark-icon" style="display: none;">🚢</div>
+              </div>
+              <div class="landmark-info">
+                <span class="landmark-badge">Historical Depth Landmark: 3,800 meters</span>
+                <h4 class="landmark-title">RMS Titanic Wreck Site</h4>
+                <p class="landmark-desc">Resting 3.8 km beneath the North Atlantic under 380 atmospheres of pressure, explored by Robert Ballard in 1985 and James Cameron.</p>
+              </div>
+            </div>
+
+            <!-- Species Cards in Zone 3 -->
+            <div class="zone-species-grid" id="gridMidnight"></div>
+          </div>
+
+          <!-- Zone 4: Abyssal (Abyssopelagic 4000-6000m) -->
+          <div class="ocean-zone-block zone-abyssal" id="zoneAbyssal" data-zone="abyssal">
+            <div class="zone-watermark-header">
+              <div class="zone-title-wrap">
+                <span class="zone-badge">4,000m — 6,000m</span>
+                <h3 class="zone-heading">Abyssopelagic Zone <small>(The Abyssal Plains)</small></h3>
+              </div>
+              <p class="zone-summary">Covers over 60% of Earth's total surface. Frigid 2°C waters, silent vast benthic plains, and superheated mineral hydrothermal vents.</p>
+            </div>
+
+            <!-- Hydrothermal Vent Landmark Card -->
+            <div class="landmark-callout-card vent-callout-card">
+              <div class="landmark-media-thumb">
+                <img 
+                  src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Blacksmoker_in_Atlantic_Ocean.jpg/330px-Blacksmoker_in_Atlantic_Ocean.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" 
+                  alt="Black Smoker Hydrothermal Vent Chimney" 
+                  class="landmark-thumb-img" 
+                  loading="lazy" 
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                >
+                <div class="landmark-icon" style="display: none;">🌋</div>
+              </div>
+              <div class="landmark-info">
+                <span class="landmark-badge" style="background: rgba(245, 158, 11, 0.18); color: #fbbf24; border-color: rgba(245, 158, 11, 0.35);">Geological Wonder: Hydrothermal Vents</span>
+                <h4 class="landmark-title">Black Smoker Mineral Chimneys</h4>
+                <p class="landmark-desc">Spewing mineral-rich fluids up to 400°C (750°F) from beneath the oceanic crust, sustaining thriving chemosynthetic colonies entirely independent of sunlight.</p>
+              </div>
+            </div>
+
+            <!-- Species Cards in Zone 4 -->
+            <div class="zone-species-grid" id="gridAbyssal"></div>
+          </div>
+
+          <!-- Zone 5: Hadal Trenches (Hadalpelagic 6000-11000m) -->
+          <div class="ocean-zone-block zone-hadal" id="zoneHadal" data-zone="hadal">
+            <div class="zone-watermark-header">
+              <div class="zone-title-wrap">
+                <span class="zone-badge">6,000m — 10,928m</span>
+                <h3 class="zone-heading">Hadalpelagic Zone <small>(The Mariana Trench & Challenger Deep)</small></h3>
+              </div>
+              <p class="zone-summary">Named after Hades, the Greek god of the underworld. V-shaped tectonic trenches where pressure exceeds 1,100 atmospheres (16,000 PSI).</p>
+            </div>
+
+            <!-- Challenger Deep Summit Landmark (10,928m) -->
+            <div class="landmark-callout-card hadal-target-card">
+              <div class="landmark-media-thumb">
+                <img 
+                  src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Marianatrenchmap.png/330px-Marianatrenchmap.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" 
+                  alt="Mariana Trench Challenger Deep Bathymetric Map" 
+                  class="landmark-thumb-img" 
+                  loading="lazy" 
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                >
+                <div class="landmark-icon" style="display: none;">🔱</div>
+              </div>
+              <div class="landmark-info">
+                <span class="landmark-badge" style="background: rgba(168, 85, 247, 0.2); color: #c084fc; border-color: rgba(168, 85, 247, 0.4);">Earth's Deepest Point: 10,928 meters</span>
+                <h4 class="landmark-title">Challenger Deep — Mariana Trench</h4>
+                <p class="landmark-desc">First conquered by Jacques Piccard & Don Walsh in bathyscaphe <em>Trieste</em> (1960), James Cameron in <em>Deepsea Challenger</em> (2012), and Victor Vescovo (2019).</p>
+              </div>
+            </div>
+
+            <!-- Species Cards in Zone 5 -->
+            <div class="zone-species-grid" id="gridHadal"></div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- =====================================================================
+           VIEW 2: DEEP-SEA FAUNA CATALOG (SEARCH & TAXONOMY)
+           ===================================================================== -->
+      <section class="module-view" id="viewCatalog" aria-label="Deep-Sea Fauna Catalog">
+        
+        <div class="catalog-filter-bar">
+          <div class="filter-pills-row" id="catalogFilterPills" role="tablist">
+            <button type="button" class="catalog-pill active" data-filter="all">All Creatures (24)</button>
+            <button type="button" class="catalog-pill" data-filter="sunlight">Sunlight Zone (0-200m)</button>
+            <button type="button" class="catalog-pill" data-filter="twilight">Twilight Zone (200-1000m)</button>
+            <button type="button" class="catalog-pill" data-filter="midnight">Midnight Zone (1000-4000m)</button>
+            <button type="button" class="catalog-pill" data-filter="abyssal">Abyssal Plain (4000-6000m)</button>
+            <button type="button" class="catalog-pill" data-filter="hadal">Hadal Trenches (6000m+)</button>
+          </div>
+
+          <div class="catalog-search-wrap">
+            <input 
+              type="search" 
+              id="catalogSearchInput" 
+              class="catalog-search-input" 
+              placeholder="Search creature, adaptation, bioluminescence, depth..."
+              aria-label="Search deep sea fauna"
+            >
+            <span class="search-icon-hint">🔍</span>
+          </div>
+        </div>
+
+        <div class="catalog-cards-grid" id="catalogCardsGrid"></div>
+      </section>
+
+      <!-- =====================================================================
+           VIEW 3: EVEREST & LANDMARK DEPTH COMPARATOR
+           ===================================================================== -->
+      <section class="module-view" id="viewScale" aria-label="Mount Everest Depth Scale Comparator">
+        
+        <div class="scale-intro-card">
+          <span class="panel-badge">⛰️ Inverted Scale Demonstration</span>
+          <h2 class="panel-title">Mount Everest Submerged in the Mariana Trench</h2>
+          <p class="panel-desc">
+            Mount Everest is the highest mountain on Earth at <strong>8,848 meters (29,029 ft)</strong> above sea level. If placed at the bottom of the Challenger Deep (<strong>10,928 meters</strong>), its peak would still be covered by over <strong>2,000 meters (1.3 miles)</strong> of ocean!
+          </p>
+        </div>
+
+        <!-- Visual Inverted Mountain Stage -->
+        <div class="everest-stage-card">
+          <div class="stage-header">
+            <h4>True Vertical Elevation & Depth Scale</h4>
+            <span class="unit-toggle-label">Scale in meters</span>
+          </div>
+
+          <div class="everest-canvas-wrapper">
+            <canvas id="everestCanvas" class="everest-canvas"></canvas>
+          </div>
+
+          <!-- Benchmark Metrics Matrix -->
+          <div class="depth-landmarks-grid">
+            <div class="landmark-metric-box">
+              <span class="l-lbl">Scuba Diving Record</span>
+              <span class="l-val">332 m</span>
+              <span class="l-sub">Ahmed Gabr (2014)</span>
+            </div>
+            <div class="landmark-metric-box">
+              <span class="l-lbl">Burj Khalifa Height</span>
+              <span class="l-val">828 m</span>
+              <span class="l-sub">Tallest human building</span>
+            </div>
+            <div class="landmark-metric-box">
+              <span class="l-lbl">Sperm Whale Max Dive</span>
+              <span class="l-val">2,250 m</span>
+              <span class="l-sub">Hunting colossal squids</span>
+            </div>
+            <div class="landmark-metric-box">
+              <span class="l-lbl">RMS Titanic Wreck</span>
+              <span class="l-val">3,800 m</span>
+              <span class="l-sub">North Atlantic abyss</span>
+            </div>
+            <div class="landmark-metric-box">
+              <span class="l-lbl">Mount Everest Peak</span>
+              <span class="l-val">8,848 m</span>
+              <span class="l-sub">Submerged inverted peak</span>
+            </div>
+            <div class="landmark-metric-box">
+              <span class="l-lbl">Challenger Deep Floor</span>
+              <span class="l-val text-amber">10,928 m</span>
+              <span class="l-sub">1,093 ATM pressure</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- =====================================================================
+           VIEW 4: HYDROTHERMAL VENTS & CHEMOSYNTHESIS LAB
+           ===================================================================== -->
+      <section class="module-view" id="viewVents" aria-label="Hydrothermal Vents Simulator">
+        
+        <div class="vents-layout">
+          <!-- Vents Interactive Chamber -->
+          <div class="vent-chamber-card">
+            <div class="vent-header">
+              <span class="panel-badge">🌋 Benthic Geothermal Chemosynthesis</span>
+              <h2 class="panel-title">Hydrothermal Black Smokers</h2>
+              <p class="panel-desc">
+                Discovered in 1977 near the Galapagos Rift. Superheated water up to <strong>400°C (750°F)</strong> erupts from mineral chimneys rich in sulfides, nourishing an alien ecosystem completely independent of sunlight!
+              </p>
+            </div>
+
+            <!-- Vent Animated Canvas -->
+            <div class="vent-canvas-box">
+              <canvas id="ventCanvas" class="vent-canvas"></canvas>
+              <div class="vent-overlay-badges">
+                <div class="vent-badge-live">
+                  <span class="pulse-fire"></span>
+                  <span>Eruption Temp: <strong id="ventTempLabel">360°C</strong></span>
+                </div>
+                <div class="vent-badge-live">
+                  <span>Mineral: <strong style="color: var(--amber-solar);">Iron & Copper Sulfides</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vent Interactive Temperature Slider -->
+            <div class="vent-controls-bar">
+              <div class="vent-slider-group">
+                <label for="ventTempSlider">Magmatic Chimney Temperature:</label>
+                <div class="slider-row">
+                  <input type="range" id="ventTempSlider" min="150" max="420" value="360" step="10">
+                  <span class="slider-val" id="ventTempDisplay">360°C</span>
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm" id="btnBurstVent">Geothermal Plume Surge 💨</button>
+            </div>
+          </div>
+
+          <!-- Chemosynthesis Educational Matrix -->
+          <div class="chemo-info-card">
+            <h3 class="chemo-title">Life Without Sunlight: How Chemosynthesis Works</h3>
+            
+            <div class="chemo-step">
+              <span class="step-num">1</span>
+              <div>
+                <strong>Hydrogen Sulfide ($H_2S$) Eruption</strong>
+                <p>Seawater seeps into oceanic crust magma chambers, dissolves heavy minerals, and shoots out as black mineral smoke.</p>
+              </div>
+            </div>
+
+            <div class="chemo-step">
+              <span class="step-num">2</span>
+              <div>
+                <strong>Chemosynthetic Bacteria</strong>
+                <p>Sulfur-oxidizing bacteria convert toxic hydrogen sulfide and carbon into organic sugars without a single photon of sunlight.</p>
+              </div>
+            </div>
+
+            <div class="chemo-step">
+              <span class="step-num">3</span>
+              <div>
+                <strong>Symbiotic Giant Tube Worms (*Riftia*)</strong>
+                <p>Tube worms grow up to 2.4 meters long with zero mouth or digestive tract; they rely entirely on internal symbiotic bacteria!</p>
+              </div>
+            </div>
+
+            <div class="chemo-step">
+              <span class="step-num">4</span>
+              <div>
+                <strong>Benthic Predators</strong>
+                <p>Hairy Yeti Crabs harvest bacteria on their claws, while deep-sea zoarcid fish and vent octopuses hunt around the warm plume.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- =====================================================================
+           VIEW 5: OCEAN TRENCH MASTERY QUIZ
+           ===================================================================== -->
+      <section class="module-view" id="viewQuiz" aria-label="Ocean Trench Quiz Master">
+        
+        <div class="quiz-container">
+          <div class="quiz-header-card">
+            <div>
+              <span class="panel-badge">🧭 Marine Science Challenge</span>
+              <h2 class="panel-title">Ocean Trench Mastery Quiz</h2>
+              <p class="panel-desc">Test your understanding of bathymetric zones, creature adaptations, and hadal physics!</p>
+            </div>
+            <div class="quiz-score-cluster">
+              <div class="score-box">
+                <span class="score-num" id="quizScore">0</span>
+                <span class="score-lbl">Score</span>
+              </div>
+              <div class="score-box">
+                <span class="score-num" id="quizStreak">0</span>
+                <span class="score-lbl">Streak 🔥</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tiers Row -->
+          <div class="quiz-tiers-row" role="tablist">
+            <button type="button" class="quiz-tier-btn active" data-tier="snorkeler">
+              <span class="tier-icon">🤿</span>
+              <span class="tier-info">
+                <strong>Reef Snorkeler (Easy)</strong>
+                <small>Sunlight zone, dolphins & coral</small>
+              </span>
+            </button>
+            <button type="button" class="quiz-tier-btn" data-tier="diver">
+              <span class="tier-icon">⚓</span>
+              <span class="tier-info">
+                <strong>Abyssal Diver (Medium)</strong>
+                <small>Bioluminescence, pressure & Titanic</small>
+              </span>
+            </button>
+            <button type="button" class="quiz-tier-btn" data-tier="oceanographer">
+              <span class="tier-icon">🔱</span>
+              <span class="tier-info">
+                <strong>Hadal Oceanographer (Hard)</strong>
+                <small>Challenger Deep, hydrothermal vents & chemistry</small>
+              </span>
+            </button>
+          </div>
+
+          <!-- Quiz Interactive Card -->
+          <div class="quiz-card" id="quizCard">
+            <div class="quiz-card-progress">
+              <span id="quizQuestionIndex">Question 1 of 8</span>
+              <span id="quizTierBadge" class="badge-tier">Snorkeler</span>
+            </div>
+
+            <div class="quiz-question-box">
+              <h3 class="quiz-question-text" id="quizQuestionText">Loading question...</h3>
+            </div>
+
+            <div class="quiz-options-grid" id="quizOptionsGrid"></div>
+
+            <div class="quiz-feedback-box hidden" id="quizFeedbackBox">
+              <div class="feedback-indicator" id="feedbackIndicator">
+                <span id="feedbackIcon">✅</span>
+                <strong id="feedbackTitle">Correct!</strong>
+              </div>
+              <p class="feedback-text" id="feedbackText">Explanation text...</p>
+              <button type="button" class="btn btn-primary" id="btnNextQuestion">Next Question →</button>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       DEEP-DIVE SPECIES DOSSIER MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop hidden" id="dossierModalBackdrop" aria-hidden="true">
+    <div class="modal-dialog dossier-modal" role="dialog" aria-modal="true" aria-labelledby="modalSpeciesTitle">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close Dossier">✕</button>
+
+      <div class="dossier-modal-content" id="dossierModalContent">
+        <!-- Injected dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="app-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand-wrap">
+        <span class="brand-text">Gami<span>lity</span> <small>Interactive Explorer Hub</small></span>
+        <p class="footer-copyright">&copy; 2026 Gamility. Built with 100% client-side privacy, HTML5 Canvas, and Web Audio API.</p>
+      </div>
+      <div class="footer-nav-links">
+        <a href="https://mahesh-yennam.github.io/Gamility/">Gamility Home</a>
+        <a href="https://mahesh-yennam.github.io/Gamility/explorer.html">Explorer Hub</a>
+        <a href="https://mahesh-yennam.github.io/Gamility/games.html">Arcade Games</a>
+        <a href="https://mahesh-yennam.github.io/Gamility/tools.html">Utility Tools</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>
